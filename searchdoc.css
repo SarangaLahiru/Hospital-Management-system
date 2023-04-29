@@ -1,0 +1,399 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    width: 100%;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    z-index: 100;
+    animation: anim2 2s;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+    height: 80px;
+    top: -80px;
+    transition: all 1s ease;
+}
+header img{
+    width: 55px;
+    position: relative;
+    top: 15px;
+    border-radius: 100px;
+}
+.head{
+    background-color: rgba(97, 111, 122, 0.164);
+    width: 100%;
+    backdrop-filter: blur(30px);
+    position: fixed;
+    height: 60px;
+
+    
+}
+.head h2{
+    margin-top: -20px;
+}
+header #log{
+    font-size: 28px;
+}
+header #log {
+    font-size: 22px;
+    background-color: rgb(115, 115, 241);
+    padding: 6px 9px;
+    border-radius: 24px;
+    color: rgb(194, 234, 247);
+    
+}
+header .sub{
+    position: absolute;
+    top: 100px;
+    line-height: 2em;
+    right: 10px;
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    width: 250px;
+    display: none;
+    
+    
+}
+header .sub .box1 li{
+    margin-left: 2px;
+    text-align: center;
+    
+    
+
+}
+header .sub .box1 a{
+    
+    color: white;
+    padding: 10px 0px;
+    
+   
+}
+header .sub .box1 li:hover{
+    background-color: black;
+}
+header .sub .box1 li:active{
+    box-shadow: 0px 0px 10px black;
+}
+header .sub .box1{
+    margin: 18px 15px;
+    
+}
+header .sub #a1{
+    background-color: rgb(235, 19, 19);
+    color: white;
+   
+   
+}
+
+header .sub #a1:hover{
+    background-color: black;
+}
+header .sub #a1:active{
+    box-shadow: 0px 0px 10px black;
+}
+header .sub .box1 li{
+    font-size: 15px;
+    background-color: rgb(0, 110, 255);
+    padding: 0px 5px;
+    margin: 10px 15px;
+    border-radius: 24px;
+    
+}
+header  #icon1{
+    padding: 40px 15px;
+}
+header li:hover .sub{
+    display: block;
+}
+header .sub .box::after{
+    content: '';
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    background-color: white;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    top: -35px;
+    left: 190px;
+  
+
+}
+header .sub .box {
+    line-height: 0.8em;
+    text-align: center;
+    position: relative;
+    
+
+
+    
+}
+header #icon{
+    background-color: brown;
+    padding: 12px 15px;
+    color: white;
+    position: absolute;
+    border-radius: 24px;
+    left: 18px;
+    top:10px;
+}
+header .sub .box a{
+    color: rgb(179, 178, 178);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+header .sub  a{
+    color: black;
+}
+header #log span:hover{
+    box-shadow: 0px 0px 10px black;
+}
+header #log  span{
+    margin: 0px 0px;
+    background-color: brown;
+    padding: 8px 16px;
+    border-radius:24px;
+    position: relative;
+    left: 16px;
+    top: -1px;
+    font-size: 20px;
+    color: white;
+
+}
+@keyframes anim2{
+    0%{
+
+    }
+    100%{
+        top: 0px;
+
+    }
+}
+header li{
+    list-style: none;
+}
+header a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.774);
+    font-size: 18px;
+}
+header h2{
+    flex-basis: 40%;
+    color: white;
+    position: relative;
+    
+}
+.slide img{
+    position: absolute;
+    top:0px;
+    width: 100%;
+}
+.slide .dis{
+    position: relative;
+    z-index: 100;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    width: 1000px;
+    top: 200px;
+    margin: 10px auto;
+    animation: anim1 2s;
+    animation-fill-mode:forwards ;
+    animation-delay: 2s;
+    opacity: 0;
+}
+.slide .dis p{
+    color: rgb(175, 175, 177);
+    font-size: 18px;
+    width: 800px;
+    margin: 10px auto;
+   
+}
+@keyframes anim1{
+    0%{
+        opacity: 0;
+
+    }
+    100%{
+        opacity: 1;
+        top: 120px;
+
+    }
+}
+.slide a{
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    border: 2px rgb(255, 253, 253) solid;
+    padding: 10px 15px;
+    border-radius: 26px;
+    position: relative;
+    top: 50px;
+    
+}
+.slide a:hover{
+    background-color: white;
+    color: black;
+}
+.slide a:active{
+    box-shadow: 0px 0px 10px black;
+}
+.topdoctors{
+    position: relative;
+    top: 800px;
+}
+.topdoctors .box1 .box{
+    width: 400px;
+    border-radius: 20px;
+    transition: all 1s ease;
+    
+}
+.topdoctors .box1{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.topdoctors .dis {
+    text-align: center;
+    width: 800px;
+    margin: 10px auto;
+}
+.topdoctors p{
+    color: rgb(190, 190, 190);
+    position: relative;
+    left: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.topdoctors h2{
+    margin: 10px 15px;
+}
+.topdoctors .box1 .box img{
+    position: relative;
+    left: -180px;
+}
+.topdoctors .box1 .box .img{
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 15px;
+    position: relative;
+    
+
+}
+.topdoctors .box1 .box h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.topdoctors .box1 .box h4{
+    color: rgb(48, 174, 224);
+    position: relative;
+    left: 20px;
+    font-size: 14px;
+}
+.topdoctors .box1 .box p{
+    width: 330px;
+    font-size: 15px;
+}
+.topdoctors .box1 .box:hover{
+    box-shadow: 0px 0px 40px rgb(124, 122, 122);
+}
+.topdoctors .box1 .box:hover input[type="submit"]{
+    background-color: rgb(127, 246, 255);
+    color: white;
+}
+.topdoctors .box1 .box form input[type="submit"]{
+    background-color: white;
+    padding: 10px 15px;
+    margin: 20px 20px;
+    border-radius: 18px;
+    font-size: 15px;
+    border: none;
+    transition: all 0.5s ease-in;
+    cursor: pointer;
+    
+}
+.topdoctors .box1 .box form input[type="submit"]:hover{
+    background-color: black;
+    color: white;
+}
+.topdoctors .box1 .box form input[type="submit"]:active{
+    box-shadow: 0px 0px 10px black;
+}
+
+.searchbox{
+    position: relative;
+    top: 750px;
+    margin: 10px auto;
+    width: 400px;
+}
+.searchbox input{
+    padding: 10px 35px;
+    border-radius: 24px;
+    border: none;
+    border: 2px rgb(150, 150, 150) solid;
+    font-size: 18px;
+    width: 400px;
+}
+.searchbox i{
+    position: absolute;
+    top:8px;
+    left: 11px;
+}
+.notice {
+    position: fixed;
+    background-color: rgb(64, 184, 34);
+    width: 100%;
+    height: 25px;
+    z-index: 100;
+    font-size: 17px;
+    text-align: center;
+    color: white;
+    top:100vh;
+    opacity: 0;
+
+}
+.online{
+    animation: anim4 4s;
+    opacity: 1;
+    animation-fill-mode: forwards;
+}
+.offline{
+    animation: anim4 4s;
+    opacity: 1;
+    animation-fill-mode: forwards;
+    background-color: red;
+
+}
+@keyframes anim4{
+    0%{
+        top:100vh;
+
+    }
+    50%{
+        top:96.5vh;
+    }
+    90%{
+        top:96.5vh;
+        
+    }
+    95%{
+        top:96.5vh;
+    }
+    100%{
+        top:100vh;
+
+    }
+}
+

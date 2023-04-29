@@ -1,0 +1,263 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(244, 250, 255);
+}
+.container a{
+    text-decoration: none;
+    color: white;
+    
+    padding: 16px 16px;
+    border-radius: 16px;
+    font-size: 20px;
+
+
+}
+.container li a:hover{
+    background-color: white;
+    color:  rgb(0, 119, 255);
+}
+.container li{
+    list-style: none;
+    margin: 100px 15px;
+    position: relative;
+    left: -2px;
+}
+.container{
+    display: flex;
+}
+.container header{
+    width: 100px;
+    background-color: rgb(0, 119, 255);
+    height: 100vh;
+    position: fixed;
+    animation: anim1 2s ;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+    opacity: 0;
+    left: -20px;
+}
+@keyframes anim1{
+    0%{
+        opacity: 0;
+
+    }
+    100%{
+        opacity: 1;
+        left:0px ;
+    }
+}
+.box .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 1200px;
+    animation: anim2 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    left: 0px;
+    position: relative;
+    opacity: 0;
+    top: -10px;
+    
+}
+@keyframes anim2{
+    0%{
+        opacity: 0;
+
+    }
+    100%{
+        opacity: 1;
+        top: 10px;
+    }
+}
+.box{
+    width: 1290px;
+    z-index: 100;
+    border-top-left-radius: 20px;
+    background-color: rgb(244, 250, 255);
+    border-bottom-left-radius: 20px;
+
+    height: 300vh;
+    position: relative;
+    left: 76px;
+}
+.box .header .dis{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.box .header .dis h2{
+    color: rgb(88, 88, 88);
+}
+.box .header .dis p{
+    color: rgb(158, 159, 160);
+}
+.box .header .dis1{
+    position: relative;
+    left: 250px;
+}
+.box .header .dis1 span{
+    background-color: brown;
+    padding: 10px 15px;
+    border-radius: 20px;
+}
+.box .header .dis1 i{
+    color: rgb(57, 162, 223);
+    font-size: 26px;
+}
+.box  .box1{
+    display: flex;
+   animation: anim5 2s;
+   animation-fill-mode: forwards;
+   animation-delay: 2s;
+    justify-content: center;
+    position: relative;
+    top: 80px;
+    opacity: 0;
+
+}
+@keyframes anim5{
+    0%{
+        opacity: 0;
+
+    }
+    100%{
+        opacity: 1;
+        top: 60px;
+    }
+}
+.box  .welc{
+    width: 400px;
+    height: 130px;
+    background: linear-gradient(to left,rgb(95, 137, 199),rgba(255, 255, 255, 0.205)), url(./images/team-young-specialist-doctors-standing-corridor-hospital.jpg);
+    background-size: cover;
+    margin: 10px 15px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    line-height: 1.6em;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.box .welc span{
+    color: rgb(0, 238, 255);
+}
+.box .appno{
+    width: 400px;
+    color: white;
+    height: 130px;
+    border-radius: 20px;
+    margin: 10px 35px;
+    background-color: antiquewhite;
+    padding: 10px 15px;
+    line-height: 2.5em;
+    background: url(./images/light-arrow-up-circuit-dark-blue-background-with-copy-space-copy-illustration-business-growth-concept_115968-109.jpg);
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.appointment{
+    position: relative;
+    top: 100px;
+    left: 180px;
+    border-radius: 20px;
+    width: 800px;
+    height: 300px;
+    padding: 10px 15px;
+    background-color: rgb(253, 253, 253);
+    overflow-y: auto;
+    animation: anim3 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+    opacity: 0;
+}
+@keyframes anim3{
+    0%{
+        opacity: 0;
+
+    }
+    100%{
+        opacity: 1;
+        top: 80px;
+    }
+}
+.appointment table{
+    width: 750px;
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+
+}
+.appointment table tr{
+    
+    
+    position: relative;
+    
+}
+.appointment table td{
+    width: 150px;
+    background-color: rgb(216, 243, 255);
+    padding: 10px 15px;
+    border-radius: 10px;
+    
+
+    
+}
+.appointment table #theam td{
+    background-color: rgb(90, 203, 231);
+    
+}
+.appointment  h2{
+    margin: 30px 15px;
+    font-size: 25px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: relative;
+    top: 15px;
+    left: 20px;
+}
+.comment{
+    position: absolute;
+    z-index: 100;
+    top: 700px;
+    left: 250px;
+    background-color: white;
+    width: 800px;
+    height: 500px;
+    border-radius: 20px;
+}
+.comment form{
+    margin: 10px auto;
+    width: 700px;
+    margin-top: 80px;
+}
+.comment input,textarea{
+    margin: 10px 15px;
+    width: 600px;
+    padding: 10px 15px;
+    border-radius: 24px;
+    border: none;
+    border: 1px black solid;
+    
+}
+.comment h2{
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: relative;
+    top: 50px;
+    left: 60px;
+}
+.comment input[type="submit"]{
+    width: 200px;
+    border-radius: 10px;
+    border: none;
+    background-color: blue;
+    color: white;
+}
+.comment input[type="submit"]:hover{
+    background-color: black;
+
+}
+.comment input[type="submit"]:active{
+    box-shadow: 0px 0px 10px black;
+}

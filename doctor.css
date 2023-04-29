@@ -1,0 +1,425 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    background-color: rgb(237, 243, 245);
+    
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    z-index: 100;
+    animation: anim2 2s;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+    height: 80px;
+    top: -80px;
+    transition: all 1s ease;
+}
+header img{
+    width: 55px;
+    position: relative;
+    top: 15px;
+    border-radius: 100px;
+}
+.head{
+    background-color: rgba(97, 111, 122, 0.164);
+    width: 100%;
+    backdrop-filter: blur(30px);
+    position: fixed;
+    height: 60px;
+
+    
+}
+.head h2{
+    margin-top: -20px;
+}
+header #log{
+    font-size: 28px;
+}
+@keyframes anim2{
+    0%{
+
+    }
+    100%{
+        top: 0px;
+
+    }
+}
+header li{
+    list-style: none;
+}
+header a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.774);
+    font-size: 18px;
+}
+header h2{
+    flex-basis: 40%;
+    color: white;
+    position: relative;
+    
+}
+
+header #log{
+    font-size: 28px;
+}
+header #log {
+    font-size: 22px;
+    background-color: rgb(115, 115, 241);
+    padding: 6px 9px;
+    border-radius: 24px;
+    color: rgb(194, 234, 247);
+    
+}
+header .sub{
+    position: absolute;
+    top: 100px;
+    line-height: 2em;
+    right: 10px;
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    width: 250px;
+    display: none;
+    
+    
+}
+header .sub .box1 li{
+    margin-left: 2px;
+    text-align: center;
+    
+    
+
+}
+header .sub .box1 a{
+    
+    color: white;
+    padding: 10px 0px;
+    
+   
+}
+header .sub .box1 li:hover{
+    background-color: black;
+}
+header .sub .box1 li:active{
+    box-shadow: 0px 0px 10px black;
+}
+header .sub .box1{
+    margin: 18px 15px;
+    
+}
+header .sub #a1{
+    background-color: rgb(235, 19, 19);
+    color: white;
+   
+   
+}
+
+header .sub #a1:hover{
+    background-color: black;
+}
+header .sub #a1:active{
+    box-shadow: 0px 0px 10px black;
+}
+header .sub .box1 li{
+    font-size: 15px;
+    background-color: rgb(0, 110, 255);
+    padding: 0px 5px;
+    margin: 10px 15px;
+    border-radius: 24px;
+    
+}
+header  #icon1{
+    padding: 40px 15px;
+}
+header li:hover .sub{
+    display: block;
+}
+header .sub .box::after{
+    content: '';
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    background-color: white;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    top: -35px;
+    left: 190px;
+  
+
+}
+header .sub .box {
+    line-height: 0.8em;
+    text-align: center;
+    position: relative;
+    
+
+
+    
+}
+header #icon{
+    background-color: brown;
+    padding: 12px 15px;
+    color: white;
+    position: absolute;
+    border-radius: 24px;
+    left: 18px;
+    top:10px;
+}
+header .sub .box a{
+    color: rgb(179, 178, 178);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+header .sub  a{
+    color: black;
+}
+header #log span:hover{
+    box-shadow: 0px 0px 10px black;
+}
+header #log  span{
+    margin: 0px 0px;
+    background-color: brown;
+    padding: 8px 16px;
+    border-radius:24px;
+    position: relative;
+    left: 16px;
+    top: -1px;
+    font-size: 20px;
+    color: white;
+
+}
+.slide{
+    position: absolute;
+    top: 0px;
+    
+  
+}
+.slide img{
+    width: 100%;
+    position: relative;
+    top: -80px;
+    z-index: -1;
+}
+.slide .img{
+    height: 550px;
+    overflow: hidden;
+    background-color: rgba(0, 183, 255, 0.233);
+    z-index: 10;
+    
+}
+.biod{
+    position: absolute;
+    top: 360px;
+    left: 50px;
+    border-radius: 26px;
+    background-color: white;
+    animation: anim1 2s;
+    animation-fill-mode:forwards ;
+    animation-delay: 3s;
+    opacity: 0;
+}
+@keyframes anim1{
+    0%{
+        opacity: 0;
+
+    }
+    100%{
+        opacity: 1;
+        top: 310px;
+    }
+}
+.topdoctors .box1 .box a{
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    left: 950px;
+    width: 160px;
+    top: 100px;
+    background-color: rgb(255, 255, 255);
+    padding: 13px 18px;
+    border-radius: 24px;
+    color: rgb(0, 162, 255);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.topdoctors .box1 .box a:hover{
+    background-color: rgb(0, 140, 255);
+    color: white;
+}
+.topdoctors .box1 .box a:active{
+    box-shadow: 0px 0px 10px black;
+}
+.topdoctors .box1 .box{
+    width: 400px;
+    border-radius: 20px;
+    transition: all 1s ease;
+    
+}
+
+.topdoctors .dis {
+    text-align: center;
+    width: 800px;
+    margin: 10px auto;
+}
+.topdoctors p{
+    color: rgb(190, 190, 190);
+    position: relative;
+    left: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.topdoctors h2{
+    margin: 10px 15px;
+}
+.topdoctors .box1 .box img{
+    position: relative;
+    left: -180px;
+}
+.topdoctors .box1 .box .img{
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 15px;
+    position: relative;
+    
+
+}
+.topdoctors .box1 .box h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.topdoctors .box1 .box h4{
+    color: rgb(48, 174, 224);
+    position: relative;
+    left: 20px;
+    font-size: 14px;
+}
+.topdoctors .box1 .box p{
+    width: 330px;
+    font-size: 15px;
+}
+.container .call{
+    position: relative;
+    top: 120vh;
+    width: 400px;
+    background-color:rgb(236, 242, 243);
+    border-radius:26px ;
+    left: 50px;
+    text-align: center;
+    height: 300px;
+    padding: 18px 10px;
+    line-height: 1.5em;
+    background:linear-gradient(to left,rgb(162, 235, 253),rgba(255, 255, 255, 0.301)), url(./images/doctor-with-stethoscope-hands-hospital-background_1423-1.avif);
+    
+}
+.container .call .box1 .box h4{
+    margin-left: -90px;
+    font-size: 40px;
+    margin-top: 80px;
+    
+}
+.container .call .box1 .box i{
+    margin: 10px 25px;
+}
+.topdoctors .box1 .box:hover{
+    box-shadow: 0px 0px 40px rgb(124, 122, 122);
+}
+.topdoctors .box1 .box:hover input[type="submit"]{
+    background-color: rgb(127, 246, 255);
+    color: white;
+}
+.topdoctors .box1 .box form input[type="submit"]{
+    background-color: white;
+    padding: 10px 15px;
+    margin: 20px 20px;
+    border-radius: 18px;
+    font-size: 15px;
+    border: none;
+    transition: all 0.5s ease-in;
+    cursor: pointer;
+    
+}
+.topdoctors .box1 .box form input[type="submit"]:hover{
+    background-color: black;
+    color: white;
+}
+.topdoctors .box1 .box form input[type="submit"]:active{
+    box-shadow: 0px 0px 10px black;
+}
+.bio{
+    position: relative;
+    width: 800px;
+    top: 320px;
+    left: 500px;
+}
+
+.appointment{
+    position: relative;
+    top: 0px;
+    background-color: rgba(14, 72, 126, 0.685);
+    width: 700px;
+    margin: 10px auto;
+    border-radius: 26px;
+    color: white;
+    padding: 10px 15px;
+    
+
+}
+.app{
+    width: 100%;
+    position: absolute;
+    top: 1300px;
+    background:linear-gradient(to left,rgba(0, 0, 255, 0.192),rgba(255, 255, 255, 0.308)),url(./images/researcher-looking-monitor-analysing-brain-scan-while-coworker-discussing-with-patient-background-about-side-effects-mind-functions-nervous-system-tomography-scan-working-laboratory.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.appointment .box .dis{
+    text-align: center;
+}
+.appointment .box form{
+    
+    width: 400px;
+    margin: 0px auto;
+}
+.appointment .box form input{
+    width: 300px;
+    padding: 10px 15px;
+    margin: 10px 15px;
+    font-size: 18px;
+    border-radius: 24px;
+
+
+}
+.appointment .box form select{
+    width: 335px;
+    padding: 10px 15px;
+    margin: 10px 15px;
+    border-radius: 24px;
+    font-size: 18px;
+}
+.appointment .box form .frm-g select option{
+    height: 40px;
+    border-radius: 24px;
+  
+    font-size: 20px;
+    
+}
+.appointment form input[type="submit"]{
+    width: 335px;
+    border: none;
+    background-color: rgb(16, 30, 77);
+    color: white;
+    cursor: pointer;
+}
+.appointment form input[type="submit"]:hover{
+    background-color: black;
+    
+}
+.appointment form input[type="submit"]:active{
+    box-shadow: 0px 0px 10px black;
+}
